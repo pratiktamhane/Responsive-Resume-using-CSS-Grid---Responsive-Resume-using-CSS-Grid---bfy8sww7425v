@@ -1,117 +1,92 @@
-@media screen and (max-width:678px) {
-    .main-section{
-        display: block;
-        grid-template-columns: auto;
-    }
-    
-}
-.main-section{
-   
-    margin: 10px;
-    border: 3px solid ;
-    border-radius: 30px;
-}
-.main-section{
-    
+.main-content {
+    height: 1000px;
     display: grid;
-    grid-template-columns: auto auto;
-    grid-gap: 40px;
-    
+    grid-template-columns: 300px 700px;
+    width: 90%;
 }
-
-.image{
-
-    
+.left-section {
+    grid-column: span 1;
+    background-color: PaleTurquoise;
+}
+.right-section {
+    grid-column: span 1/ span 2;
+    background-color: LightPink;    
+}
+.left-content    {
+    padding: 1rem;
+}
+.profile-image   {
     display: block;
     margin: auto;
-    justify-content: center;
-    justify-self: center;
-    border: 3px solid;
-    border-radius: 70%;
-    width: 40%;
+    border: 5px white solid;
+    border-radius: 30%;
+    width: 60%;
+}
+.name   {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.2rem;
+    padding: 0.8rem;
+    letter-spacing: 0.02px;
+}
+.designation    {
+    text-align: center;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+}
+.description    {
+    text-align: center;
+    font-size: 0.75rem;
+    padding: 1rem;
+}
+.icon{
+    display: inline;
+    padding: 20px;
+    text-align: center;
+    margin: 5px 2px;
+    font-size: 30px;
+    width: 50px;
+}
+.skills {
+    font-size: 0.75rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem 0.5rem 1rem 0.5rem;
+}
+.skill-name {
+    font-size: 0.65rem;
+    font-weight: 600;
+    text-align: left;
+    padding-bottom: 0.5rem;
+}
+.progress-bar   {
+    border: 1px white solid;
+    height: 4px;
+    background-color: white;
+}
+.right-main-content {
+    padding: 32px 48px 32px 48px;
+}
+.right-title    {
+    text-transform:uppercase;
+    font-weight:700;
+    font-size:1.2rem;
+    letter-spacing:1px;
+    padding: 0.5rem;
+}
+@media (max-width: 673px)   {
+    .main-content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.name{
-    text-align: center;
-    text-transform: uppercase;
-}
-.decoratin{
-    text-align: center;
-    text-transform: uppercase;
-    size: 10px;
-}
-.Decripation{
-    margin-top: 20px;
-    text-align: center;
- margin-left: 10px;
-}
-.social-media{
-    padding-left: 20px;
-    margin-top: 20px;
-    display: flex;
-    
-    justify-content: space-around;
-    margin-bottom: 10px;
-
-   
-}
-.contact{
-    padding-left: 20px;
-}
-.skills-h3{
-    padding-left: 20px;
-    margin: 10px;
-    text-align: center;
-}
-.skills{
-    padding-left: 20px;
-    margin-left: 10px;
-    text-transform: uppercase;
-}
-.java{
-    margin-top: 5px;
-    border: 3px solid;
-    color: burlywood;
-    width: 8cm;
-    border-color: black;
-    border-radius: 10px;
-    margin-bottom: 10px;
-}
-.JavaScript{
-    margin-top: 5px;
-    border: 3px solid;
-    color: burlywood;
-    width: 4cm;
-    border-color: black;
-    border-radius: 10px;
-    margin-bottom: 10px;
-}
-.HTML{
-    margin-top: 5px;
-    border: 3px solid;
-    color: burlywood;
-    width: 9cm;
-    border-color: black;
-    border-radius: 10px;
-    margin-bottom: 10px;
-}
-.css{
-    margin-top: 5px;
-    border: 3px solid;
-    color: burlywood;
-    width: 8cm;
-    border-color: black;
-    border-radius: 10px;
-    margin-bottom: 10px;
-}
-.right-section{
-   
-    padding-left: 20px;
-}
-.date{
-    
-    
-    display: flex;
-    justify-content: space-between;
-    padding-right: 20px;
-}
+/* Write CSS code below */
